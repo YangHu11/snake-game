@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>贪吃蛇 · 极简版</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-wrapper">
+        <div class="header">
+            <div class="score-box">分数 <span id="scoreDisplay">0</span></div>
+            <button class="restart-btn" id="restartButton">↻ 重来</button>
+        </div>
+        <canvas id="gameCanvas" width="400" height="400"></canvas>
+        <div class="hint">
+            <span>← ↑ → ↓</span>
+            <span>空格 暂停</span>
+        </div>
+    </div>
+
+    <script src="game.js"></script>
+</body>
+</html>
