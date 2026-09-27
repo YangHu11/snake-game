@@ -3,22 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>贪吃蛇v1.0</title>
+    <title>贪吃蛇v2.0</title>
+    <!-- 【改动】外链引入样式 -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="game-wrapper">
         <div class="header">
             <div class="score-box">分数 <span id="scoreDisplay">0</span></div>
-            <button class="restart-btn" id="restartButton">↻ 重来</button>
+
+            <!-- 【改动】新增 controls 容器，内含静音按钮 + 重来按钮 -->
+            <div class="controls">
+                <button class="icon-btn" id="muteButton" title="静音 / 取消静音 (M)">🔊</button>
+                <button class="restart-btn" id="restartButton">↻ 重来</button>
+            </div>
         </div>
+
         <canvas id="gameCanvas" width="400" height="400"></canvas>
+
+        <!-- 【改动】提示区新增 “M 静音” -->
         <div class="hint">
             <span>← ↑ → ↓</span>
             <span>空格 暂停</span>
+            <span>M 静音</span>
         </div>
     </div>
 
+    <!-- 【改动】外链引入脚本 -->
     <script src="game.js"></script>
 </body>
 </html>
